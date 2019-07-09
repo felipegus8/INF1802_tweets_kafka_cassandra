@@ -51,7 +51,7 @@ public class TweetRepository {
                 .append("geo_location_longitude float,")
                 .append("lang text,")
                 .append("country text,")
-                .append("contributors text, PRIMARY KEY((id,lang)));");
+                .append("contributors text, PRIMARY KEY(lang,id));");
         final String query = sb.toString();
         System.out.println(sb);
 
